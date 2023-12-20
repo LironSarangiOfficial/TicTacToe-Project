@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Press+Start+2P&family=Rubik+Lines&family=VT323&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: rgb(0, 68, 116);
+    background-image: linear-gradient(to right,rgb(0, 59, 161),rgb(120, 194, 247));
+}
+/* NAVIGATION BAR CSS */
+nav{
+    display: flex;
+    background-color: rgb(54, 169, 228);
+    color: rgb(128, 24, 152);
+    height: 4rem;
+
+    padding: 1rem;
+    font-family: 'Press Start 2P', serif;
+    font-size: 3.3rem;
+}
+.top{
+    display: flex;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+img#heading {
+    all: initial;
+    height: 4rem;
+}
+
+/* MAIN GAME GRID CSS */
+
+.gameContainer{
+    background-color: rgb(54, 250, 240);
+    background-image: linear-gradient(to left,rgb(54, 250, 240) 10%,rgb(0, 59, 161));
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    padding: 1rem;
+    position: relative;
+    /* justify-content: left; */
+}
+
+.container{
+    display: grid;
+    grid-template-rows: repeat(3,12vw);
+    grid-template-columns: repeat(3,12vw);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 8vw;
+    position: relative;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.56rem solid rgb(0, 6, 96);
+    border-style: inset;
+    border-radius: 17%;
+}
+.boxtext{
+    color: rgb(9, 0, 93);
+}
+.box:hover{
+    background-color: rgba(114, 255, 54, 0.638);
+    cursor: pointer;
+}
+.info{
+    font-size: 36px;
+}
+.game-info{
+    padding: 50px;
+    font-family: 'Baloo 2', serif;
+}
+
+.imgbox img{
+    /* display: none; */
+    width: 0px;
+    transition: width 1s ease-in-out;
+}
+
+.bl-0{
+    border-left: none;
+}
+.br-0{
+    border-right: none;
+}
+.bt-0{
+    border-top: none;
+}
+.bb-0{
+    border-bottom: none;
+}
+.line1{
+    background-color: aliceblue;
+    width: 42vw;
+    height: 5px;
+    position: absolute;
+    transform: translate(-100vw,-100vw) rotate(0deg);
+}
+#reset {
+    display: block;
+    margin: 30px 0px;
+    padding: 1px 20px;
+    background-color: rgb(8,205,8);
+    color: darkblue;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 800px) {
+    .top{
+        flex-wrap: wrap;
+    }
+    .gameContainer{
+        flex-wrap: wrap;
+    }
+
+    .game-info{
+        margin-top: 34px;
+    }
+}

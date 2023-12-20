@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+<link rel="shortcut icon" href="data:image/png;base64,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" type="image/x-icon">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <div class="top">
+                    <img src="https://cdn3.iconfinder.com/data/icons/brain-games/1042/Tic-Tac-Toe-Game.png" alt="tictactoe" id="heading">
+                    TicTacToe.IO
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="gameContainer">
+        <div class="container">
+            <div class="line1"></div>
+            <div class="box bl-0 bt-0"><span class="boxtext"></span></div>
+            <div class="box bt-0"><span class="boxtext"></span></div>
+            <div class="box bt-0 br-0"><span class="boxtext"></span></div>
+            <div class="box bl-0"><span class="boxtext"></span></div>
+            <div class="box"><span class="boxtext"></span></div>
+            <div class="box br-0"><span class="boxtext"></span></div>
+            <div class="box bl-0 bb-0"><span class="boxtext"></span></div>
+            <div class="box bb-0"><span class="boxtext"></span></div>
+            <div class="box br-0 bb-0"><span class="boxtext"></span></div>
+        </div>
+        <div class="game-info">
+            <h1>TIC TAC TOE</h1>
+            <h3>Three in a row, tic tac toe</h3>
+            <div>
+                <span class="info">Player x's Turn</span>
+                <button id="reset">Reset</button>
+                <div class="imgbox">
+                    <img src="https://media.tenor.com/Zof_FwuqXGoAAAAj/spongebob-giddy.gif" alt="excited">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <p>Ayein??......Baigan</p> -->
+    <script src="script.js">
+        
+    </script>
+</body>
+</html>
